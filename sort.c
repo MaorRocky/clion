@@ -3,18 +3,19 @@
 #include <stdio.h>
 
 /* Function to swap *a and *b */
-void swap(int* a, int* b);
+void swap(int *a, int *b);
 
 // Sort the input array, the array is assumed to 
 // have values in {0, 1, 2} 
-void sort012(int a[], int arr_size)
-{
+void sort012(int a[], int arr_size) {
     int p0 = 0;
     int p2 = arr_size - 1;
     int p1 = 0;
 
-    while (p1 <= p2) {
-        switch (a[p1]) {
+    while (p1 <= p2)
+    {
+        switch (a[p1])
+        {
             case 0:
                 swap(&a[p0++], &a[p1++]);
                 break;
@@ -29,16 +30,14 @@ void sort012(int a[], int arr_size)
 }
 
 /* UTILITY FUNCTIONS */
-void swap(int* a, int* b)
-{
+void swap(int *a, int *b) {
     int temp = *a;
     *a = *b;
     *b = temp;
 }
 
 /* Utility function to print array arr[] */
-void printArray(int arr[], int arr_size)
-{
+void printArray(int arr[], int arr_size) {
     int i;
     for (i = 0; i < arr_size; i++)
         printf("%d ", arr[i]);
@@ -46,9 +45,8 @@ void printArray(int arr[], int arr_size)
 }
 
 /* driver program to test */
-int main()
-{
-    int arr[] = { 0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1 };
+int main() {
+    int arr[] = {0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1};
     int arr_size = sizeof(arr) / sizeof(arr[0]);
 
     sort012(arr, arr_size);
@@ -56,6 +54,9 @@ int main()
     printf("array after segregation\n");
     printArray(arr, arr_size);
 
-    getchar();
+    int *p;
+    *p = 0x10000;
+    *p = 0x600;
+    *p = 0x800;
     return 0;
 } 

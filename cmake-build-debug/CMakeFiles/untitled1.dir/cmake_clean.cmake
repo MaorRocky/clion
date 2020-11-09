@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/untitled1.dir/sort.c.o"
+  "CMakeFiles/untitled1.dir/my_itoa_class.c.o"
   "untitled1"
   "untitled1.pdb"
 )

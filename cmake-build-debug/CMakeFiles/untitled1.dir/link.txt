@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/untitled1.dir/sort.c.o  -o untitled1 
+/usr/bin/cc -g   CMakeFiles/untitled1.dir/my_itoa_class.c.o  -o untitled1 

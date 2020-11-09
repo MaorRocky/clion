@@ -68,10 +68,10 @@ RM = /home/maor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/c
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maor/CLionProjects/untitled1
+CMAKE_SOURCE_DIR = /home/maor/CLionProjects/clion
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maor/CLionProjects/untitled1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/maor/CLionProjects/clion/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maor/CLionProjects/untitled1/cmake-build-debug/CMakeFiles /home/maor/CLionProjects/untitled1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maor/CLionProjects/clion/cmake-build-debug/CMakeFiles /home/maor/CLionProjects/clion/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maor/CLionProjects/untitled1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maor/CLionProjects/clion/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -143,32 +143,32 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-sort.o: sort.c.o
+my_itoa_class.o: my_itoa_class.c.o
 
-.PHONY : sort.o
+.PHONY : my_itoa_class.o
 
 # target to build an object file
-sort.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sort.c.o
-.PHONY : sort.c.o
+my_itoa_class.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/my_itoa_class.c.o
+.PHONY : my_itoa_class.c.o
 
-sort.i: sort.c.i
+my_itoa_class.i: my_itoa_class.c.i
 
-.PHONY : sort.i
+.PHONY : my_itoa_class.i
 
 # target to preprocess a source file
-sort.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sort.c.i
-.PHONY : sort.c.i
+my_itoa_class.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/my_itoa_class.c.i
+.PHONY : my_itoa_class.c.i
 
-sort.s: sort.c.s
+my_itoa_class.s: my_itoa_class.c.s
 
-.PHONY : sort.s
+.PHONY : my_itoa_class.s
 
 # target to generate assembly for a file
-sort.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sort.c.s
-.PHONY : sort.c.s
+my_itoa_class.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/my_itoa_class.c.s
+.PHONY : my_itoa_class.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled1"
-	@echo "... sort.o"
-	@echo "... sort.i"
-	@echo "... sort.s"
+	@echo "... my_itoa_class.o"
+	@echo "... my_itoa_class.i"
+	@echo "... my_itoa_class.s"
 .PHONY : help
 
 

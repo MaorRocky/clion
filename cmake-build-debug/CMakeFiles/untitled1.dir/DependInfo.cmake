@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/maor/CLionProjects/untitled1/sort.c" "/home/maor/CLionProjects/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/sort.c.o"
+  "/home/maor/CLionProjects/clion/my_itoa_class.c" "/home/maor/CLionProjects/clion/cmake-build-debug/CMakeFiles/untitled1.dir/my_itoa_class.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
