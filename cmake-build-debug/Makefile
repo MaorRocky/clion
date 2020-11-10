@@ -143,32 +143,32 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-rotate.o: rotate.c.o
+printSubArrays.o: printSubArrays.c.o
 
-.PHONY : rotate.o
+.PHONY : printSubArrays.o
 
 # target to build an object file
-rotate.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/rotate.c.o
-.PHONY : rotate.c.o
+printSubArrays.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/printSubArrays.c.o
+.PHONY : printSubArrays.c.o
 
-rotate.i: rotate.c.i
+printSubArrays.i: printSubArrays.c.i
 
-.PHONY : rotate.i
+.PHONY : printSubArrays.i
 
 # target to preprocess a source file
-rotate.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/rotate.c.i
-.PHONY : rotate.c.i
+printSubArrays.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/printSubArrays.c.i
+.PHONY : printSubArrays.c.i
 
-rotate.s: rotate.c.s
+printSubArrays.s: printSubArrays.c.s
 
-.PHONY : rotate.s
+.PHONY : printSubArrays.s
 
 # target to generate assembly for a file
-rotate.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/rotate.c.s
-.PHONY : rotate.c.s
+printSubArrays.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/printSubArrays.c.s
+.PHONY : printSubArrays.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled1"
-	@echo "... rotate.o"
-	@echo "... rotate.i"
-	@echo "... rotate.s"
+	@echo "... printSubArrays.o"
+	@echo "... printSubArrays.i"
+	@echo "... printSubArrays.s"
 .PHONY : help
 
 

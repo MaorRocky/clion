@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/maor/CLionProjects/clion/rotate.c
+/home/maor/CLionProjects/clion/printSubArrays.c
 stdio.h
--
-stdlib.h
 -
 

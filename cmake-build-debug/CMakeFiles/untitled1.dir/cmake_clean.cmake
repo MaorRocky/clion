@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/untitled1.dir/rotate.c.o"
+  "CMakeFiles/untitled1.dir/printSubArrays.c.o"
   "untitled1"
   "untitled1.pdb"
 )
