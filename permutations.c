@@ -8,6 +8,8 @@
 
 void permute(char *a, int l, int r);
 
+int length(char *s);
+
 void swap(char *x, char *y);
 
 int main() {
@@ -33,9 +35,15 @@ void permute(char *a, int l, int r) {
     {
         for (i = l; i <= r; i++)
         {
-            swap((a+l), (a+i));
-            permute(a, l+1, r);
-            swap((a+l), (a+i)); //backtrack
+            swap((a + l), (a + i));
+            permute(a, l + 1, r);
+            swap((a + l), (a + i)); //backtrack
         }
     }
+}
+
+int length(char *s) {
+    int i;
+    for (i = 0; s[i] != '\0'; ++i);
+    return i;
 }

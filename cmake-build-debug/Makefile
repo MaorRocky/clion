@@ -143,32 +143,32 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-my_itoa_class.o: my_itoa_class.c.o
+rotate.o: rotate.c.o
 
-.PHONY : my_itoa_class.o
+.PHONY : rotate.o
 
 # target to build an object file
-my_itoa_class.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/my_itoa_class.c.o
-.PHONY : my_itoa_class.c.o
+rotate.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/rotate.c.o
+.PHONY : rotate.c.o
 
-my_itoa_class.i: my_itoa_class.c.i
+rotate.i: rotate.c.i
 
-.PHONY : my_itoa_class.i
+.PHONY : rotate.i
 
 # target to preprocess a source file
-my_itoa_class.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/my_itoa_class.c.i
-.PHONY : my_itoa_class.c.i
+rotate.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/rotate.c.i
+.PHONY : rotate.c.i
 
-my_itoa_class.s: my_itoa_class.c.s
+rotate.s: rotate.c.s
 
-.PHONY : my_itoa_class.s
+.PHONY : rotate.s
 
 # target to generate assembly for a file
-my_itoa_class.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/my_itoa_class.c.s
-.PHONY : my_itoa_class.c.s
+rotate.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/rotate.c.s
+.PHONY : rotate.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled1"
-	@echo "... my_itoa_class.o"
-	@echo "... my_itoa_class.i"
-	@echo "... my_itoa_class.s"
+	@echo "... rotate.o"
+	@echo "... rotate.i"
+	@echo "... rotate.s"
 .PHONY : help
 
 

@@ -77,27 +77,27 @@ include CMakeFiles/untitled1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/untitled1.dir/flags.make
 
-CMakeFiles/untitled1.dir/my_itoa_class.c.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/my_itoa_class.c.o: ../my_itoa_class.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maor/CLionProjects/clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/untitled1.dir/my_itoa_class.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/my_itoa_class.c.o   -c /home/maor/CLionProjects/clion/my_itoa_class.c
+CMakeFiles/untitled1.dir/rotate.c.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/rotate.c.o: ../rotate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maor/CLionProjects/clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/untitled1.dir/rotate.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/rotate.c.o   -c /home/maor/CLionProjects/clion/rotate.c
 
-CMakeFiles/untitled1.dir/my_itoa_class.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/my_itoa_class.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/maor/CLionProjects/clion/my_itoa_class.c > CMakeFiles/untitled1.dir/my_itoa_class.c.i
+CMakeFiles/untitled1.dir/rotate.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/rotate.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/maor/CLionProjects/clion/rotate.c > CMakeFiles/untitled1.dir/rotate.c.i
 
-CMakeFiles/untitled1.dir/my_itoa_class.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/my_itoa_class.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/maor/CLionProjects/clion/my_itoa_class.c -o CMakeFiles/untitled1.dir/my_itoa_class.c.s
+CMakeFiles/untitled1.dir/rotate.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/rotate.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/maor/CLionProjects/clion/rotate.c -o CMakeFiles/untitled1.dir/rotate.c.s
 
 # Object files for target untitled1
 untitled1_OBJECTS = \
-"CMakeFiles/untitled1.dir/my_itoa_class.c.o"
+"CMakeFiles/untitled1.dir/rotate.c.o"
 
 # External object files for target untitled1
 untitled1_EXTERNAL_OBJECTS =
 
-untitled1: CMakeFiles/untitled1.dir/my_itoa_class.c.o
+untitled1: CMakeFiles/untitled1.dir/rotate.c.o
 untitled1: CMakeFiles/untitled1.dir/build.make
 untitled1: CMakeFiles/untitled1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maor/CLionProjects/clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable untitled1"
