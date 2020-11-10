@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/maor/CLionProjects/clion/printSubArrays.c
+/home/maor/CLionProjects/clion/sumLists2.c
 stdio.h
+-
+stdlib.h
 -
 

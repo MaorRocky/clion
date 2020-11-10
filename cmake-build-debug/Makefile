@@ -143,32 +143,32 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-printSubArrays.o: printSubArrays.c.o
+sumLists2.o: sumLists2.c.o
 
-.PHONY : printSubArrays.o
+.PHONY : sumLists2.o
 
 # target to build an object file
-printSubArrays.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/printSubArrays.c.o
-.PHONY : printSubArrays.c.o
+sumLists2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sumLists2.c.o
+.PHONY : sumLists2.c.o
 
-printSubArrays.i: printSubArrays.c.i
+sumLists2.i: sumLists2.c.i
 
-.PHONY : printSubArrays.i
+.PHONY : sumLists2.i
 
 # target to preprocess a source file
-printSubArrays.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/printSubArrays.c.i
-.PHONY : printSubArrays.c.i
+sumLists2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sumLists2.c.i
+.PHONY : sumLists2.c.i
 
-printSubArrays.s: printSubArrays.c.s
+sumLists2.s: sumLists2.c.s
 
-.PHONY : printSubArrays.s
+.PHONY : sumLists2.s
 
 # target to generate assembly for a file
-printSubArrays.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/printSubArrays.c.s
-.PHONY : printSubArrays.c.s
+sumLists2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sumLists2.c.s
+.PHONY : sumLists2.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled1"
-	@echo "... printSubArrays.o"
-	@echo "... printSubArrays.i"
-	@echo "... printSubArrays.s"
+	@echo "... sumLists2.o"
+	@echo "... sumLists2.i"
+	@echo "... sumLists2.s"
 .PHONY : help
 
 

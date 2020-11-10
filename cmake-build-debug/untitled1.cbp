@@ -76,7 +76,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/maor/CLionProjects/clion/printSubArrays.c">
+		<Unit filename="/home/maor/CLionProjects/clion/sumLists2.c">
 			<Option target="untitled1"/>
 		</Unit>
 		<Unit filename="/home/maor/CLionProjects/clion/CMakeLists.txt">

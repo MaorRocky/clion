@@ -7,8 +7,12 @@ struct Node {
     struct Node *next;
 };
 
+
+
+
 /* Function to create a new node with given data */
-struct Node *newNode(int data) {
+struct Node *newNode(int data)
+{
     struct Node *new_node = (struct Node *)
             malloc(
                     sizeof(struct Node));
@@ -19,7 +23,8 @@ struct Node *newNode(int data) {
 
 /* Function to insert a node
 at the beginning of the Singly Linked List */
-void push(struct Node **head_ref, int new_data) {
+void push(struct Node **head_ref, int new_data)
+{
     /* allocate node */
     struct Node *new_node = newNode(new_data);
 
@@ -35,7 +40,8 @@ lists and return the head node
 of resultant list */
 struct Node *addTwoLists(
         struct Node *first,
-        struct Node *second) {
+        struct Node *second)
+{
 
     // res is head node of the resultant list
     struct Node *res = newNode(-1);
@@ -66,7 +72,8 @@ struct Node *addTwoLists(
 }
 
 // A utility function to print a linked list
-void printList(struct Node *node) {
+void printList(struct Node *node)
+{
     while (node != NULL)
     {
         printf("%d ", node->data);
@@ -76,7 +83,8 @@ void printList(struct Node *node) {
 }
 
 /* Driver program to test above function */
-int main(void) {
+int main(void)
+{
     struct Node *res = NULL;
     struct Node *first = NULL;
     struct Node *second = NULL;

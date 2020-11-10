@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/untitled1.dir/printSubArrays.c.o"
+  "CMakeFiles/untitled1.dir/sumLists2.c.o"
   "untitled1"
   "untitled1.pdb"
 )
