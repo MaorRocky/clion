@@ -143,32 +143,32 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-sumLists2.o: sumLists2.c.o
+main.o: main.c.o
 
-.PHONY : sumLists2.o
+.PHONY : main.o
 
 # target to build an object file
-sumLists2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sumLists2.c.o
-.PHONY : sumLists2.c.o
+main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/main.c.o
+.PHONY : main.c.o
 
-sumLists2.i: sumLists2.c.i
+main.i: main.c.i
 
-.PHONY : sumLists2.i
+.PHONY : main.i
 
 # target to preprocess a source file
-sumLists2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sumLists2.c.i
-.PHONY : sumLists2.c.i
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/main.c.i
+.PHONY : main.c.i
 
-sumLists2.s: sumLists2.c.s
+main.s: main.c.s
 
-.PHONY : sumLists2.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-sumLists2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sumLists2.c.s
-.PHONY : sumLists2.c.s
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/main.c.s
+.PHONY : main.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled1"
-	@echo "... sumLists2.o"
-	@echo "... sumLists2.i"
-	@echo "... sumLists2.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

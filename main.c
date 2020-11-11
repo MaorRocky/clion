@@ -4,7 +4,6 @@
 
 // Works only if range elements is limited
 #include <stdio.h>
-#include <stdbool.h>
 
 #define MAX 100000
 
@@ -13,7 +12,7 @@ void printPairs(int arr[], int arr_size, int sum)
     int i, temp;
 
     /*initialize hash set as 0*/
-    bool s[MAX] = {0};
+    int s[MAX] = {0};
 
     for (i = 0; i < arr_size; i++)
     {
