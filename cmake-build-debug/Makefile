@@ -143,32 +143,32 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-drwa_matrix.o: drwa_matrix.c.o
+check_regex.o: check_regex.c.o
 
-.PHONY : drwa_matrix.o
+.PHONY : check_regex.o
 
 # target to build an object file
-drwa_matrix.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/drwa_matrix.c.o
-.PHONY : drwa_matrix.c.o
+check_regex.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/check_regex.c.o
+.PHONY : check_regex.c.o
 
-drwa_matrix.i: drwa_matrix.c.i
+check_regex.i: check_regex.c.i
 
-.PHONY : drwa_matrix.i
+.PHONY : check_regex.i
 
 # target to preprocess a source file
-drwa_matrix.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/drwa_matrix.c.i
-.PHONY : drwa_matrix.c.i
+check_regex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/check_regex.c.i
+.PHONY : check_regex.c.i
 
-drwa_matrix.s: drwa_matrix.c.s
+check_regex.s: check_regex.c.s
 
-.PHONY : drwa_matrix.s
+.PHONY : check_regex.s
 
 # target to generate assembly for a file
-drwa_matrix.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/drwa_matrix.c.s
-.PHONY : drwa_matrix.c.s
+check_regex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/check_regex.c.s
+.PHONY : check_regex.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled1"
-	@echo "... drwa_matrix.o"
-	@echo "... drwa_matrix.i"
-	@echo "... drwa_matrix.s"
+	@echo "... check_regex.o"
+	@echo "... check_regex.i"
+	@echo "... check_regex.s"
 .PHONY : help
 
 

@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/maor/CLionProjects/clion/drwa_matrix.c
+/home/maor/CLionProjects/clion/check_regex.c
 stdio.h
+-
+string.h
 -
 
