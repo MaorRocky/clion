@@ -143,32 +143,32 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-main.o: main.c.o
+drwa_matrix.o: drwa_matrix.c.o
 
-.PHONY : main.o
+.PHONY : drwa_matrix.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/main.c.o
-.PHONY : main.c.o
+drwa_matrix.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/drwa_matrix.c.o
+.PHONY : drwa_matrix.c.o
 
-main.i: main.c.i
+drwa_matrix.i: drwa_matrix.c.i
 
-.PHONY : main.i
+.PHONY : drwa_matrix.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/main.c.i
-.PHONY : main.c.i
+drwa_matrix.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/drwa_matrix.c.i
+.PHONY : drwa_matrix.c.i
 
-main.s: main.c.s
+drwa_matrix.s: drwa_matrix.c.s
 
-.PHONY : main.s
+.PHONY : drwa_matrix.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/main.c.s
-.PHONY : main.c.s
+drwa_matrix.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/drwa_matrix.c.s
+.PHONY : drwa_matrix.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled1"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... drwa_matrix.o"
+	@echo "... drwa_matrix.i"
+	@echo "... drwa_matrix.s"
 .PHONY : help
 
 

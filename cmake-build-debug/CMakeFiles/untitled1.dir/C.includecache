@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/maor/CLionProjects/clion/main.c
+/home/maor/CLionProjects/clion/drwa_matrix.c
 stdio.h
--
-stdbool.h
 -
 

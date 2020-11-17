@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/untitled1.dir/main.c.o"
+  "CMakeFiles/untitled1.dir/drwa_matrix.c.o"
   "untitled1"
   "untitled1.pdb"
 )

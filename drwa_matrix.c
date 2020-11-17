@@ -2,7 +2,7 @@
 
 int main()
 {
-    float x = 0, y = 0, ypos = 0, xpos = 0, radius = 0, rsqrd = 0, rcheck = 0;
+    float x = 0, y = 0, ypos = 0, xpos = 0, radius = 3, rsqrd = 0, rcheck = 0;
     int matsize = 0, i, j;
 
 
@@ -21,7 +21,7 @@ int main()
     x = -1 * (matsize / 2);
     //with this I make sure that the x and y values start from the top right corner of the matrix, so that each x, y value corresponds to the correct cell position (i, j)
     y = matsize / 2;
-    int mat[matsize][matsize];
+    int mat[10][10];
 
 
     for (i = 0; i < matsize; i++)

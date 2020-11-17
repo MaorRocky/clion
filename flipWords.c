@@ -1,4 +1,14 @@
-void reverse_substring(char *left, char *right) {
+#include <stdio.h>
+#include <stdbool.h>
+#include <ctype.h>
+
+bool is_space(char s)
+{
+    return s == ' ';
+}
+
+void reverse_substring(char *left, char *right)
+{
     while (left < --right)
     {
         char c = *right;
@@ -7,19 +17,19 @@ void reverse_substring(char *left, char *right) {
     }
 }
 
-#include <ctype.h>
 /* reverse individual words in string */
 /* word boundaries determined by isspace() */
-char *reverse_words(char *name) {
+char *reverse_words(char *name)
+{
     char *end;
     for (char *start = name; *start; start = end)
     {
-        while (*start && isspace(*start))
+        while (*start && is_space(*start))
         {
             ++start;
         }
         end = start;
-        while (*end && !isspace(*end))
+        while (*end && !is_space(*end))
         {
             ++end;
         }
@@ -29,9 +39,9 @@ char *reverse_words(char *name) {
     return name;
 }
 
-#include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     char s[] = " AB BBC QQ ";
     printf("%s", reverse_words(s));
 }
