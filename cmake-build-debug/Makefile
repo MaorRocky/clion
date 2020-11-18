@@ -143,32 +143,32 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-check_regex.o: check_regex.c.o
+string_compression.o: string_compression.c.o
 
-.PHONY : check_regex.o
+.PHONY : string_compression.o
 
 # target to build an object file
-check_regex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/check_regex.c.o
-.PHONY : check_regex.c.o
+string_compression.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/string_compression.c.o
+.PHONY : string_compression.c.o
 
-check_regex.i: check_regex.c.i
+string_compression.i: string_compression.c.i
 
-.PHONY : check_regex.i
+.PHONY : string_compression.i
 
 # target to preprocess a source file
-check_regex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/check_regex.c.i
-.PHONY : check_regex.c.i
+string_compression.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/string_compression.c.i
+.PHONY : string_compression.c.i
 
-check_regex.s: check_regex.c.s
+string_compression.s: string_compression.c.s
 
-.PHONY : check_regex.s
+.PHONY : string_compression.s
 
 # target to generate assembly for a file
-check_regex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/check_regex.c.s
-.PHONY : check_regex.c.s
+string_compression.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/string_compression.c.s
+.PHONY : string_compression.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled1"
-	@echo "... check_regex.o"
-	@echo "... check_regex.i"
-	@echo "... check_regex.s"
+	@echo "... string_compression.o"
+	@echo "... string_compression.i"
+	@echo "... string_compression.s"
 .PHONY : help
 
 

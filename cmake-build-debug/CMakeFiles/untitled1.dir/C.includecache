@@ -6,8 +6,12 @@
 
 #IncludeRegexTransform: 
 
-/home/maor/CLionProjects/clion/check_regex.c
+/home/maor/CLionProjects/clion/string_compression.c
 stdio.h
+-
+stdio.h
+-
+stdlib.h
 -
 string.h
 -

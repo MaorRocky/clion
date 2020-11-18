@@ -34,8 +34,7 @@ int compareHelper(char *s, char *regex, int star)
         return 1;
     } else if (*regex == '*')
     {
-        regex++;
-        return compareHelper(s, regex, 1); // star is seen hence will be set to true.
+        return compareHelper(s, regex + 1, 1); // star is seen hence will be set to true.
     } else
     {
         if (!star)
@@ -45,9 +44,7 @@ int compareHelper(char *s, char *regex, int star)
                 return 0;
             } else
             {
-                s++;
-                regex++;
-                return compareHelper(s, regex, star);
+                return compareHelper(s + 1, regex + 1, star);
             }
 
         } else
@@ -59,8 +56,7 @@ int compareHelper(char *s, char *regex, int star)
             if (*s == '\0') return 0;
             else
             {
-                s++;
-                return compareHelper(s, regex + 1, 0) | compareHelper(s, regex, 1);
+                return compareHelper(s + 1, regex + 1, 0) | compareHelper(s + 1, regex, 1);
             }
         }
     }

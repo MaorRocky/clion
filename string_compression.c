@@ -1,18 +1,18 @@
 #include<stdio.h>
 
-char* StrCompress(char myStr[])
+char *StrCompress(char myStr[])
 {
     char *s = myStr;
     char *r, *p;
     int count, i;
-
+    char count_arr[50];
     while (*s)
     {
         /*initially only 1 character of a kind is present*/
         count = 1;
 
         /*we check whether current character matches the next one*/
-        while (*s && *s == *(s+1))
+        while (*s && *s == *(s + 1))
         {
             /*if yes,then increase the count due to the match 
             and increment the string pointer to next */
@@ -23,7 +23,12 @@ char* StrCompress(char myStr[])
         if (count > 1) /*if more than one character of a kind is present*/
         {
             /*assign the value of count to second occurence of a particular character*/
-            *(s - count + 2) = count + '0';
+            sprintf(count_arr, "%d", count);
+            for (int j = 0; *(count_arr + j); ++j, s++)
+            {
+                *(s - count + 2) = count_arr[j];
+            }
+//            *(s - count + 2) = count + '0';
 
             /*delete all other occurences except the first one and second one using array shift*/
             for (i = 0; i < count - 2; i++)
@@ -44,16 +49,16 @@ char* StrCompress(char myStr[])
 }
 
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 #define MAX_RLEN 50
 
 /* Returns the Run Length Encoded string for the
    source string src */
-char* encode(char* src)
+char *encode(char *src)
 {
-    int rLen;
+    int counter;
     char count[MAX_RLEN];
     int len = strlen(src);
 
@@ -61,28 +66,31 @@ char* encode(char* src)
     then size of destination string would be twice of input string.
     For example if the src is "abcd", then dest would be "a1b1c1d1"
     For other inputs, size would be less than twice.  */
-    char* dest = (char*)malloc(sizeof(char) * (len * 2 + 1));
+    char *dest = (char *) malloc(sizeof(char) * (len * 2 + 1));
 
     int i, j = 0, k;
 
     /* traverse the input string one by one */
-    for (i = 0; i < len; i++) {
+    for (i = 0; i < len; i++)
+    {
 
         /* Copy the first occurrence of the new character */
         dest[j++] = src[i];
 
         /* Count the number of occurrences of the new character */
-        rLen = 1;
-        while (i + 1 < len && src[i] == src[i + 1]) {
-            rLen++;
+        counter = 1;
+        while (i + 1 < len && src[i] == src[i + 1])
+        {
+            counter++;
             i++;
         }
 
-        /* Store rLen in a character array count[] */
-        sprintf(count, "%d", rLen);
+        /* Store counter in a character array count[] */
+        sprintf(count, "%d", counter);
 
         /* Copy the count[] to destination */
-        for (k = 0; *(count + k); k++, j++) {
+        for (k = 0; *(count + k); k++, j++)
+        {
             dest[j] = count[k];
         }
     }
@@ -94,12 +102,13 @@ char* encode(char* src)
 
 int main()
 {
-    char myStr[] = "AAAABBBCCCCCCDDDEFGHHIJJ";
+//    char myStr[] = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBCCCCCCDDDEFGHHIJJ";
 
-    printf("Compressed String is : %s\n", StrCompress(myStr));
-    char str[] = "AAAABBBCCCCCCDDDEFGHHIJJ";
-    char* res = encode(str);
+//    printf("Compressed String is : %s\n", StrCompress(myStr));
+    char str[] = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBCCCCCCDDDEFGHHIJJ";
+    char *res = encode(str);
     printf("%s", res);
+    free(res);
 
     return 0;
 }

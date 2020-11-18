@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/untitled1.dir/check_regex.c.o"
+  "CMakeFiles/untitled1.dir/string_compression.c.o"
   "untitled1"
   "untitled1.pdb"
 )
