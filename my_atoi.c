@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 // A simple atoi() function
-int myAtoi(char* str)
+int myAtoi(char *str)
 {
     // Initialize result
     int res = 0;
@@ -20,7 +20,8 @@ int myAtoi(char* str)
 
     // If number is negative,
     // then update sign
-    if (str[0] == '-') {
+    if (str[0] == '-')
+    {
         sign = -1;
 
         // Also update index of first digit

@@ -1,64 +1,48 @@
-//
-// Created by maor on 17/11/2020.
-//
-
+// A C program to match wild card characters 
 #include <stdio.h>
-#include <string.h>
+#include <stdbool.h>
 
+// The main function that checks if two given strings 
+// match. The first string may contain wildcard characters 
+bool match(char *first, char * second)
+{
+    // If we reach at the end of both strings, we are done
+    if (*first == '\0' && *second == '\0')
+        return true;
 
-int compareHelper(char *s, char *regex, int star);
+    // Make sure that the characters after '*' are present
+    // in second string. This function assumes that the first
+    // string will not contain two consecutive '*'
+    if (*first == '*' && *(first+1) != '\0' && *second == '\0')
+        return false;
 
-int compareStrings(char *s, char *r);
+    // If the first string contains '?', or current characters
+    // of both strings match
+    if ( *first == *second)
+        return match(first+1, second+1);
 
+    // If there is *, then there are two possibilities
+    // a) We consider current character of second string
+    // b) We ignore current character of second string.
+    if (*first == '*')
+        return match(first+1, second) || match(first, second+1);
+    return false;
+}
+
+// A function to run test cases 
+void test(char *first, char *second)
+{ match(first, second)? puts("Yes"): puts("No"); }
+
+// Driver program to test above functions 
 int main()
 {
-    printf("%d\n", compareStrings("aaaacbbb", "a*b"));
-    printf("%d\n", compareStrings("aaaabccccccccb", "a*b*c"));
+    test("a*b","aaaaaacccccbbbbb"); // yes
+    test("a*b*c","aaaabcccccccccb"); // no
+    test("g*ks", "geeks"); // Yes
+    test("g*k", "gee"); // No because 'k' is not in second
+    test("*pqrs", "pqrst"); // No because 't' is not in first
+    test("abc*bcd", "abcdhghgbcd"); // Yes
+    // instances of 'c'
+    test("*c*d", "abcd"); // Yes
     return 0;
-
-}
-
-//aaaaacbbb
-//a*b
-
-int compareStrings(char *s, char *r)
-{
-    return compareHelper(s, r, 0);
-
-}
-
-int compareHelper(char *s, char *regex, int star)
-{
-    if (*s == '\0' && *regex == '\0')
-    {
-        return 1;
-    } else if (*regex == '*')
-    {
-        return compareHelper(s, regex + 1, 1); // star is seen hence will be set to true.
-    } else
-    {
-        if (!star)
-        {
-            if (*s != *regex)
-            { // star was not seen and they differ in char
-                return 0;
-            } else
-            {
-                return compareHelper(s + 1, regex + 1, star);
-            }
-
-        } else
-        {
-            while (*s && *s != *regex)
-            {
-                s++;
-            }
-            if (*s == '\0') return 0;
-            else
-            {
-                return compareHelper(s + 1, regex + 1, 0) | compareHelper(s + 1, regex, 1);
-            }
-        }
-    }
-}
-
+} 

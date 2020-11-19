@@ -100,15 +100,61 @@ char *encode(char *src)
     return dest;
 }
 
+char *rev_encode(char *src)
+{
+    int counter;
+    char count[MAX_RLEN];
+    int len = strlen(src);
+    char temp_char;
+    char *dest = (char *) malloc(sizeof(char) * (len * 2 + 1));
+
+
+    int i, j = 0, k;
+
+    /* traverse the input string one by one */
+    for (i = 0; i < len; i++)
+    {
+
+        /* Copy the first occurrence of the new character */
+        temp_char = src[i];
+
+        /* Count the number of occurrences of the new character */
+        counter = 1;
+        while (i + 1 < len && src[i] == src[i + 1])
+        {
+            counter++;
+            i++;
+        }
+
+        /* Store counter in a character array count[] */
+        sprintf(count, "%d", counter);
+
+        /* Copy the count[] to destination */
+        for (k = 0; *(count + k); k++, j++)
+        {
+            dest[j] = count[k];
+        }
+        dest[j++] = temp_char;
+    }
+    dest[j] = '\0';
+    return dest;
+
+
+}
+
 int main()
 {
 //    char myStr[] = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBCCCCCCDDDEFGHHIJJ";
 
 //    printf("Compressed String is : %s\n", StrCompress(myStr));
     char str[] = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBCCCCCCDDDEFGHHIJJ";
+    char rev_str[] = "aaabbbcd";
     char *res = encode(str);
-    printf("%s", res);
+    char *rev = rev_encode(rev_str);
+    printf("%s\n", res);
+    printf("%s", rev);
     free(res);
+    free(rev);
 
     return 0;
 }

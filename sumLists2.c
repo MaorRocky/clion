@@ -189,19 +189,20 @@ void my_addList(struct Node *head1, struct Node *head2, struct Node **result)
 
     }
     i++;
-    a[i] = '\0';
+    b[i] = '\0';
 
     int carry = 0;
     lsize--;
     rsize--;
     while (lsize >= 0 || rsize >= 0 || carry)
     {
-        int c = (lsize >= 0 ? a[lsize--] - '0' : 0) + (rsize >= 0 ? b[rsize--] - '0' : 0) + carry;
+        int sum = (lsize >= 0 ? a[lsize--] - '0' : 0) + (rsize >= 0 ? b[rsize--] - '0' : 0) + carry;
+        carry = sum / 10;
+        sum = sum % 10;
         struct Node *temp = NULL;
-        push(&temp, c % 10);
+        push(&temp, sum);
         temp->next = list;
         list = temp;
-        carry = c / 10;
 
     }
     *result = list;

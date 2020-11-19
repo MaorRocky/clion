@@ -32,6 +32,9 @@ void printSubArrays(int arr[], int start, int end, int size)
 
 }
 
+
+
+
 int main()
 {
     int arr[] = {1, 2, 3};

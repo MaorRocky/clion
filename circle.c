@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 
-#define WIDTH 60
-#define HEIGHT 20
+#define WIDTH 8
+#define HEIGHT 8
 #define X WIDTH/2
 #define Y HEIGHT/2
 #define XMAX WIDTH-X-1
@@ -15,58 +15,63 @@
 char grid[HEIGHT][WIDTH];
 
 int circle(int x, int y, int radius);
+int circle2(int x, int y, int radius);
 int plot(int x, int y);
+
 void init_grid(void);
+
 void show_grid(void);
 
 int main()
 {
     init_grid();
-    circle(0,0,8);
+    circle(0,0,2);
     show_grid();
+//    show_grid();
 
-    return(0);
+    return (0);
 }
 
 /* Plot a circle */
 int circle(int x, int y, int radius)
 {
-    float xpos,ypos,radsqr,xsqr;
+    float xpos, ypos, radsqr, xsqr;
 
-    for(xpos=x-radius;xpos<=x+radius;xpos+=0.1)
+    for (xpos = x - radius; xpos <= x + radius; xpos += 0.1)
     {
-        radsqr = pow(radius,2);
-        xsqr = pow(xpos,2);
+        radsqr = pow(radius, 2);
+        xsqr = pow(xpos, 2);
         ypos = sqrt(abs(radsqr - xsqr));
-        plot(rintf(xpos),rintf(ypos));
-        plot(rintf(xpos),rintf(-ypos));
+        plot(rintf(xpos), rintf(ypos));
+        plot(rintf(xpos), rintf(-ypos));
     }
 
-    return(1);
+    return (1);
 }
+
 
 /* Set "pixel" at specific coordinates */
 int plot(int x, int y)
 {
-    if( x > XMAX || x < XMIN || y > YMAX || y < YMIN )
-        return(-1);
+    if (x > XMAX || x < XMIN || y > YMAX || y < YMIN)
+        return (-1);
 
-    grid[Y-y][X+x] = '*';
-    return(1);
+    grid[Y - y][X + x] = '*';
+    return (1);
 }
 
 /* Initialize grid */
 void init_grid(void)
 {
-    int x,y;
+    int x, y;
 
-    for(y=0;y<HEIGHT;y++)
-        for(x=0;x<WIDTH;x++)
+    for (y = 0; y < HEIGHT; y++)
+        for (x = 0; x < WIDTH; x++)
             grid[y][x] = ' ';
     /* draw the axis */
-    for(y=0;y<HEIGHT;y++)
+    for (y = 0; y < HEIGHT; y++)
         grid[y][X] = '|';
-    for(x=0;x<WIDTH;x++)
+    for (x = 0; x < WIDTH; x++)
         grid[Y][x] = '-';
     grid[Y][X] = '+';
 }
@@ -74,11 +79,11 @@ void init_grid(void)
 /* display grid */
 void show_grid(void)
 {
-    int x,y;
+    int x, y;
 
-    for(y=0;y<HEIGHT;y++)
+    for (y = 0; y < HEIGHT; y++)
     {
-        for(x=0;x<WIDTH;x++)
+        for (x = 0; x < WIDTH; x++)
             putchar(grid[y][x]);
         putchar('\n');
     }

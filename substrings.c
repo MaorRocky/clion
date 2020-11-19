@@ -10,7 +10,8 @@ int FindMaxSum(int arr[], int n);
 
 void print_substrings(char str[], int n);
 
-int main() {
+int main()
+{
     char s[] = "Geeky";
     print_substrings(s, strlen(s));
 
@@ -21,7 +22,8 @@ int main() {
 }
 
 
-void print_substrings(char str[], int n) {
+void print_substrings(char str[], int n)
+{
     for (int i = 0; i < n; ++i)
     {
         char temp[n - i + 1];
@@ -36,7 +38,8 @@ void print_substrings(char str[], int n) {
 }
 
 
-int FindMaxSum(int arr[], int n) {
+int FindMaxSum(int arr[], int n)
+{
     int incl = arr[0];
     int excl = 0;
     int excl_new;
