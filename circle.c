@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 
-#define WIDTH 8
-#define HEIGHT 8
+#define WIDTH 50
+#define HEIGHT 50
 #define X WIDTH/2
 #define Y HEIGHT/2
 #define XMAX WIDTH-X-1
@@ -14,23 +14,6 @@
 
 char grid[HEIGHT][WIDTH];
 
-int circle(int x, int y, int radius);
-int circle2(int x, int y, int radius);
-int plot(int x, int y);
-
-void init_grid(void);
-
-void show_grid(void);
-
-int main()
-{
-    init_grid();
-    circle(0,0,2);
-    show_grid();
-//    show_grid();
-
-    return (0);
-}
 
 /* Plot a circle */
 int circle(int x, int y, int radius)
@@ -87,4 +70,46 @@ void show_grid(void)
             putchar(grid[y][x]);
         putchar('\n');
     }
+}
+
+
+int main()
+{
+    /*init_grid();
+    circle(0, 0, 4);
+    show_grid();*/
+    int width = 11, height = 11;
+    int a = 5, b = 5;
+    int r = 5;
+    float epsilon = 2.2;
+
+    char mat[width][height];
+    for (int i = 0; i < width; ++i)
+    {
+        for (int j = 0; j < height; ++j)
+        {
+            mat[i][j] = '.';
+        }
+    }
+
+
+    for (int y = 0; y < height; ++y)
+    {
+        for (int x = 0; x < width; ++x)
+        {
+            if (abs(pow(x - a, 2) + pow(y - b, 2) - pow(r, 2)) < pow(epsilon, 2))
+            {
+                mat[y][x] = '#';
+            }
+        }
+    }
+
+    for (int i = 0; i < width; i++) {
+        for (int j = 0; j < height; j++) {
+            printf("%c ", mat[i][j]);
+        }
+        printf("\n");
+    }
+
+    return (0);
 }
