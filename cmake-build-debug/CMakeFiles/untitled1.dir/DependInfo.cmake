@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/maor/CLionProjects/clion/check_regex.c" "/home/maor/CLionProjects/clion/cmake-build-debug/CMakeFiles/untitled1.dir/check_regex.c.o"
+  "/home/maor/CLionProjects/clion/circle.c" "/home/maor/CLionProjects/clion/cmake-build-debug/CMakeFiles/untitled1.dir/circle.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

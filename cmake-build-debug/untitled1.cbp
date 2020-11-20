@@ -76,7 +76,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/maor/CLionProjects/clion/check_regex.c">
+		<Unit filename="/home/maor/CLionProjects/clion/circle.c">
 			<Option target="untitled1"/>
 		</Unit>
 		<Unit filename="/home/maor/CLionProjects/clion/CMakeLists.txt">

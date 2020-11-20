@@ -143,32 +143,32 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-check_regex.o: check_regex.c.o
+circle.o: circle.c.o
 
-.PHONY : check_regex.o
+.PHONY : circle.o
 
 # target to build an object file
-check_regex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/check_regex.c.o
-.PHONY : check_regex.c.o
+circle.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/circle.c.o
+.PHONY : circle.c.o
 
-check_regex.i: check_regex.c.i
+circle.i: circle.c.i
 
-.PHONY : check_regex.i
+.PHONY : circle.i
 
 # target to preprocess a source file
-check_regex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/check_regex.c.i
-.PHONY : check_regex.c.i
+circle.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/circle.c.i
+.PHONY : circle.c.i
 
-check_regex.s: check_regex.c.s
+circle.s: circle.c.s
 
-.PHONY : check_regex.s
+.PHONY : circle.s
 
 # target to generate assembly for a file
-check_regex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/check_regex.c.s
-.PHONY : check_regex.c.s
+circle.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/circle.c.s
+.PHONY : circle.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled1"
-	@echo "... check_regex.o"
-	@echo "... check_regex.i"
-	@echo "... check_regex.s"
+	@echo "... circle.o"
+	@echo "... circle.i"
+	@echo "... circle.s"
 .PHONY : help
 
 

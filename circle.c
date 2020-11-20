@@ -73,15 +73,54 @@ void show_grid(void)
 }
 
 
+my_circle(int a, int b, int r)
+{
+    int width = 50;
+    int height = 50;
+    double epsilion = 2.1;
+    char matrix[height][width];
+
+    for (int x = 0; x < width; ++x)
+    {
+        for (int y = 0; y < height; ++y)
+        {
+            matrix[x][y] = '.';
+        }
+    }
+
+    for (int y = 0; y < height; ++y)
+    {
+        for (int x = 0; x < width; ++x)
+        {
+
+            int xs = pow(x - a, 2);
+            int ys = pow(y - b, 2);
+            int rs = pow(r, 2);
+            if (abs(xs + ys - rs) < pow(epsilion, 2))
+                matrix[y][x] = '#';
+        }
+    }
+
+    for (int i = 0; i < width; i++)
+    {
+        for (int j = 0; j < height; j++)
+        {
+            printf("%c ", matrix[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+
 int main()
 {
     /*init_grid();
     circle(0, 0, 4);
     show_grid();*/
-    int width = 11, height = 11;
-    int a = 5, b = 5;
+    /*int width = 50, height = 50;
+    int a = 25, b = 25;
     int r = 5;
-    float epsilon = 2.2;
+    double epsilon = 0.8;
 
     char mat[width][height];
     for (int i = 0; i < width; ++i)
@@ -104,12 +143,15 @@ int main()
         }
     }
 
-    for (int i = 0; i < width; i++) {
-        for (int j = 0; j < height; j++) {
+    for (int i = 0; i < width; i++)
+    {
+        for (int j = 0; j < height; j++)
+        {
             printf("%c ", mat[i][j]);
         }
         printf("\n");
-    }
+    }*/
+    my_circle(25,25,5);
 
     return (0);
 }

@@ -6,9 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/maor/CLionProjects/clion/check_regex.c
+/home/maor/CLionProjects/clion/circle.c
 stdio.h
 -
-stdbool.h
+math.h
+-
+stdlib.h
 -
 
