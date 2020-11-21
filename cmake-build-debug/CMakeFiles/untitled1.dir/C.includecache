@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/maor/CLionProjects/clion/circle.c
+/home/maor/CLionProjects/clion/rotate_matrix_cloclwise.c
 stdio.h
--
-math.h
--
-stdlib.h
 -
 

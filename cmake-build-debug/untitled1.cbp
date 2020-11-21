@@ -76,7 +76,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/maor/CLionProjects/clion/circle.c">
+		<Unit filename="/home/maor/CLionProjects/clion/rotate_matrix_cloclwise.c">
 			<Option target="untitled1"/>
 		</Unit>
 		<Unit filename="/home/maor/CLionProjects/clion/CMakeLists.txt">

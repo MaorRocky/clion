@@ -12,7 +12,7 @@ int memo(int matrix[N][N], int memory[N][N], int m, int n, int x, int y)
 {
     if (x == m && y == n)
         return matrix[x][y];
-    if (x > m || y > n)
+    if (x < m || y < n)
         return 0;
     else
     {
@@ -21,8 +21,8 @@ int memo(int matrix[N][N], int memory[N][N], int m, int n, int x, int y)
 
 
         memory[x][y] =
-                matrix[x][y] + max(memo(matrix, memory, m, n, x + 1, y + 1),
-                                   memo(matrix, memory, m, n, x + 1, y));
+                matrix[x][y] + max(memo(matrix, memory, m, n, x - 1, y - 1),
+                                   memo(matrix, memory, m, n, x - 1, y));
         return memory[x][y];
     }
 
@@ -40,7 +40,7 @@ int sum(int matrix[N][N])
         }
     }
 
-    return memo(matrix, memory, N - 1, N - 1, 0, 0);
+    return memo(matrix, memory, 0, 0, N-1, N-1);
 
 
 }

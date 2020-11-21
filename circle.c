@@ -14,22 +14,26 @@
 
 char grid[HEIGHT][WIDTH];
 
+int circle(int x, int y, int radius);
+int plot(int x, int y);
+void init_grid(void);
+void show_grid(void);
 
 /* Plot a circle */
 int circle(int x, int y, int radius)
 {
-    float xpos, ypos, radsqr, xsqr;
+    float xpos,ypos,radsqr,xsqr;
 
-    for (xpos = x - radius; xpos <= x + radius; xpos += 0.1)
+    for(xpos=x-radius;xpos<=x+radius;xpos+=0.1)
     {
-        radsqr = pow(radius, 2);
-        xsqr = pow(xpos, 2);
+        radsqr = pow(radius,2);
+        xsqr = pow(xpos,2);
         ypos = sqrt(abs(radsqr - xsqr));
-        plot(rintf(xpos), rintf(ypos));
-        plot(rintf(xpos), rintf(-ypos));
+        plot(rintf(xpos),rintf(ypos));
+        plot(rintf(xpos),rintf(-ypos));
     }
 
-    return (1);
+    return(1);
 }
 
 
@@ -73,10 +77,17 @@ void show_grid(void)
 }
 
 
-my_circle(int a, int b, int r)
+void my_circle(int a, int b, int r)
 {
+
     int width = 50;
     int height = 50;
+    int my_x = width / 2;
+    int my_y = height / 2;
+    int xmax = width - my_x - 1;
+    int xmin = -(width - my_x);
+    int ymax = height - my_y;
+    int ymin = -(height - my_y) + 1;
     double epsilion = 2.1;
     char matrix[height][width];
 
@@ -88,16 +99,22 @@ my_circle(int a, int b, int r)
         }
     }
 
-    for (int y = 0; y < height; ++y)
+    for (int y = 0; y < height; y++)
+        matrix[y][my_x] = '|';
+    for (int x = 0; x < width; x++)
+        matrix[my_y][x] = '-';
+    matrix[Y][X] = '+';
+
+    for (int x = 0; x < height; ++x)
     {
-        for (int x = 0; x < width; ++x)
+        for (int y = 0; y < width; ++y)
         {
 
             int xs = pow(x - a, 2);
             int ys = pow(y - b, 2);
             int rs = pow(r, 2);
             if (abs(xs + ys - rs) < pow(epsilion, 2))
-                matrix[y][x] = '#';
+                matrix[my_y - y][x + my_x] = '#';
         }
     }
 
@@ -114,13 +131,13 @@ my_circle(int a, int b, int r)
 
 int main()
 {
-    /*init_grid();
-    circle(0, 0, 4);
+   /* init_grid();
+    circle(0   , 0, 4);
     show_grid();*/
-    /*int width = 50, height = 50;
+    int width = 50, height = 50;
     int a = 25, b = 25;
     int r = 5;
-    double epsilon = 0.8;
+    double epsilon = 2.2;
 
     char mat[width][height];
     for (int i = 0; i < width; ++i)
@@ -138,7 +155,7 @@ int main()
         {
             if (abs(pow(x - a, 2) + pow(y - b, 2) - pow(r, 2)) < pow(epsilon, 2))
             {
-                mat[y][x] = '#';
+                mat[y][x] = '1';
             }
         }
     }
@@ -150,8 +167,8 @@ int main()
             printf("%c ", mat[i][j]);
         }
         printf("\n");
-    }*/
-    my_circle(25,25,5);
+    }
+//    my_circle(0, 5, 5);
 
     return (0);
 }

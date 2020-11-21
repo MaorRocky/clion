@@ -143,32 +143,32 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-circle.o: circle.c.o
+rotate_matrix_cloclwise.o: rotate_matrix_cloclwise.c.o
 
-.PHONY : circle.o
+.PHONY : rotate_matrix_cloclwise.o
 
 # target to build an object file
-circle.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/circle.c.o
-.PHONY : circle.c.o
+rotate_matrix_cloclwise.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/rotate_matrix_cloclwise.c.o
+.PHONY : rotate_matrix_cloclwise.c.o
 
-circle.i: circle.c.i
+rotate_matrix_cloclwise.i: rotate_matrix_cloclwise.c.i
 
-.PHONY : circle.i
+.PHONY : rotate_matrix_cloclwise.i
 
 # target to preprocess a source file
-circle.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/circle.c.i
-.PHONY : circle.c.i
+rotate_matrix_cloclwise.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/rotate_matrix_cloclwise.c.i
+.PHONY : rotate_matrix_cloclwise.c.i
 
-circle.s: circle.c.s
+rotate_matrix_cloclwise.s: rotate_matrix_cloclwise.c.s
 
-.PHONY : circle.s
+.PHONY : rotate_matrix_cloclwise.s
 
 # target to generate assembly for a file
-circle.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/circle.c.s
-.PHONY : circle.c.s
+rotate_matrix_cloclwise.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/rotate_matrix_cloclwise.c.s
+.PHONY : rotate_matrix_cloclwise.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled1"
-	@echo "... circle.o"
-	@echo "... circle.i"
-	@echo "... circle.s"
+	@echo "... rotate_matrix_cloclwise.o"
+	@echo "... rotate_matrix_cloclwise.i"
+	@echo "... rotate_matrix_cloclwise.s"
 .PHONY : help
 
 
