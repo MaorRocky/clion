@@ -10,6 +10,8 @@ unsigned char reverse(unsigned char b);
 
 int main() {
     unsigned char c = 0b11000000;
+    // 0000 1100
+    // 0b0001 -> 0b1000 = 0x8
     printf("%d", reverse(c));
 
     return 0;

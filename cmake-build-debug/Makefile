@@ -143,32 +143,32 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-rotate_matrix_cloclwise.o: rotate_matrix_cloclwise.c.o
+paths_bottomleft_upperRIght.o: paths_bottomleft_upperRIght.c.o
 
-.PHONY : rotate_matrix_cloclwise.o
+.PHONY : paths_bottomleft_upperRIght.o
 
 # target to build an object file
-rotate_matrix_cloclwise.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/rotate_matrix_cloclwise.c.o
-.PHONY : rotate_matrix_cloclwise.c.o
+paths_bottomleft_upperRIght.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/paths_bottomleft_upperRIght.c.o
+.PHONY : paths_bottomleft_upperRIght.c.o
 
-rotate_matrix_cloclwise.i: rotate_matrix_cloclwise.c.i
+paths_bottomleft_upperRIght.i: paths_bottomleft_upperRIght.c.i
 
-.PHONY : rotate_matrix_cloclwise.i
+.PHONY : paths_bottomleft_upperRIght.i
 
 # target to preprocess a source file
-rotate_matrix_cloclwise.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/rotate_matrix_cloclwise.c.i
-.PHONY : rotate_matrix_cloclwise.c.i
+paths_bottomleft_upperRIght.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/paths_bottomleft_upperRIght.c.i
+.PHONY : paths_bottomleft_upperRIght.c.i
 
-rotate_matrix_cloclwise.s: rotate_matrix_cloclwise.c.s
+paths_bottomleft_upperRIght.s: paths_bottomleft_upperRIght.c.s
 
-.PHONY : rotate_matrix_cloclwise.s
+.PHONY : paths_bottomleft_upperRIght.s
 
 # target to generate assembly for a file
-rotate_matrix_cloclwise.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/rotate_matrix_cloclwise.c.s
-.PHONY : rotate_matrix_cloclwise.c.s
+paths_bottomleft_upperRIght.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/paths_bottomleft_upperRIght.c.s
+.PHONY : paths_bottomleft_upperRIght.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled1"
-	@echo "... rotate_matrix_cloclwise.o"
-	@echo "... rotate_matrix_cloclwise.i"
-	@echo "... rotate_matrix_cloclwise.s"
+	@echo "... paths_bottomleft_upperRIght.o"
+	@echo "... paths_bottomleft_upperRIght.i"
+	@echo "... paths_bottomleft_upperRIght.s"
 .PHONY : help
 
 

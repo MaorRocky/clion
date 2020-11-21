@@ -3,19 +3,21 @@
 
 int maxSubArraySum(int a[], int size);
 
+int max(int a, int b)
+{
+    return a > b ? a : b;
+}
+
 int maxSubArraySum(int a[], int size)
 {
-
-    int max = a[0];
-    int curr_sum = max;
+    int ans = a[0];
+    int curr_sum = ans;
     for (int i = 1; i < size; ++i)
     {
-        curr_sum = curr_sum + a[i] > a[i] ? curr_sum + a[i] : a[i];
-        max = curr_sum > max ? curr_sum : max;
+        curr_sum = max(curr_sum + a[i], a[i]);
+        ans = max(ans, curr_sum);
     }
-    return max;
-
-
+    return ans;
 }
 
 int maxSubArrayIndex(int a[], int size)

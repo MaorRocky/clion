@@ -5,5 +5,5 @@ set(CMAKE_C_STANDARD 99)
 
 #add_executable(untitled1 main.c substrings.c)
 #add_executable(untitled1 substrings.c flipWords.c)
-add_executable(untitled1 rotate_matrix_cloclwise.c)
+add_executable(untitled1 paths_bottomleft_upperRIght.c)
 target_link_libraries(untitled1 m)

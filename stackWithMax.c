@@ -6,62 +6,93 @@
 // A structure to represent a stack
 struct StackNode {
     int data;
-    struct StackNode* next;
+    struct StackNode *next;
 };
 
-struct StackNode* newNode(int data)
+int peek(struct StackNode *root);
+
+struct StackNode *root = NULL;
+struct StackNode *max = NULL;
+
+struct StackNode *newNode(int data)
 {
-    struct StackNode* stackNode = (struct StackNode*)malloc(sizeof(struct StackNode));
+    struct StackNode *stackNode = (struct StackNode *) malloc(sizeof(struct StackNode));
     stackNode->data = data;
     stackNode->next = NULL;
     return stackNode;
 }
 
-int isEmpty(struct StackNode* root)
+int isEmpty(struct StackNode *root)
 {
     return !root;
 }
 
-void push(struct StackNode** root, int data)
+void push(struct StackNode **root, int data)
 {
-    struct StackNode* stackNode = newNode(data);
+
+    struct StackNode *stackNode = newNode(data);
+    if (data > peek(max))
+    {
+        struct StackNode *stackNodeMax = newNode(data);
+        stackNodeMax->next = max;
+        max = stackNodeMax;
+
+    }
     stackNode->next = *root;
     *root = stackNode;
     printf("%d pushed to stack\n", data);
 }
 
-int pop(struct StackNode** root)
+int pop(struct StackNode **root)
 {
     if (isEmpty(*root))
         return INT_MIN;
-    struct StackNode* temp = *root;
+    struct StackNode *temp = *root;
     *root = (*root)->next;
     int popped = temp->data;
     free(temp);
 
+    if (popped == peek(max))
+    {
+        temp = max;
+        max = max->next;
+        free(temp);
+    }
+
     return popped;
 }
 
-int peek(struct StackNode* root)
+int peek(struct StackNode *root)
 {
     if (isEmpty(root))
         return INT_MIN;
     return root->data;
 }
 
-int getMax(){}
+int getMax()
+{
+    return max->data;
+}
 
 int main()
 {
-    struct StackNode* root = NULL;
 
     push(&root, 10);
     push(&root, 20);
+    push(&root, 150);
     push(&root, 30);
+
+    printf("%d\n", getMax());
 
     printf("%d popped from stack\n", pop(&root));
 
     printf("Top element is %d\n", peek(root));
+
+    printf("%d popped from stack\n", pop(&root));
+
+    printf("%d\n", getMax());
+    printf("%d popped from stack\n", pop(&root));
+
 
     return 0;
 }

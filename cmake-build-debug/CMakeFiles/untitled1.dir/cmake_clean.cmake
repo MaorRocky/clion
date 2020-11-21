@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/untitled1.dir/rotate_matrix_cloclwise.c.o"
+  "CMakeFiles/untitled1.dir/paths_bottomleft_upperRIght.c.o"
   "untitled1"
   "untitled1.pdb"
 )

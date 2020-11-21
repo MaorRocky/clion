@@ -138,7 +138,6 @@ int main()
     int a = 25, b = 25;
     int r = 5;
     double epsilon = 2.2;
-
     char mat[width][height];
     for (int i = 0; i < width; ++i)
     {
@@ -147,8 +146,6 @@ int main()
             mat[i][j] = '.';
         }
     }
-
-
     for (int y = 0; y < height; ++y)
     {
         for (int x = 0; x < width; ++x)
@@ -159,7 +156,6 @@ int main()
             }
         }
     }
-
     for (int i = 0; i < width; i++)
     {
         for (int j = 0; j < height; j++)
