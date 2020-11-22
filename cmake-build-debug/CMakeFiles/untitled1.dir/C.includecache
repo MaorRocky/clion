@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/maor/CLionProjects/clion/paths_bottomleft_upperRIght.c
+/home/maor/CLionProjects/clion/flipWords.c
 stdio.h
+-
+stdbool.h
+-
+ctype.h
 -
 

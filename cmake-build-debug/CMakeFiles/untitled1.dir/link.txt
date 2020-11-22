@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/untitled1.dir/paths_bottomleft_upperRIght.c.o  -o untitled1  -lm 
+/usr/bin/cc -g   CMakeFiles/untitled1.dir/flipWords.c.o  -o untitled1  -lm 

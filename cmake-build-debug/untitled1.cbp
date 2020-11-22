@@ -76,7 +76,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/maor/CLionProjects/clion/paths_bottomleft_upperRIght.c">
+		<Unit filename="/home/maor/CLionProjects/clion/flipWords.c">
 			<Option target="untitled1"/>
 		</Unit>
 		<Unit filename="/home/maor/CLionProjects/clion/CMakeLists.txt">

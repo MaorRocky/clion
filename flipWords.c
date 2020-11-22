@@ -42,6 +42,6 @@ char *reverse_words(char *name)
 
 int main(void)
 {
-    char s[] = " AB BBC QQ ";
+    char s[] = "MAOR";
     printf("%s", reverse_words(s));
 }

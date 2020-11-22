@@ -35,7 +35,7 @@ int removeDuplicates(int arr[], int n)
 int removeDuplicates_unsorted(int arr[], int size)
 {
     int i, j, k = 0;
-    arr[k] = arr[0];
+//    arr[k] = arr[0];
 
     for (i = 1; i < size; i++)
     {

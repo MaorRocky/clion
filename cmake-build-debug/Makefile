@@ -143,32 +143,32 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-paths_bottomleft_upperRIght.o: paths_bottomleft_upperRIght.c.o
+flipWords.o: flipWords.c.o
 
-.PHONY : paths_bottomleft_upperRIght.o
+.PHONY : flipWords.o
 
 # target to build an object file
-paths_bottomleft_upperRIght.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/paths_bottomleft_upperRIght.c.o
-.PHONY : paths_bottomleft_upperRIght.c.o
+flipWords.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/flipWords.c.o
+.PHONY : flipWords.c.o
 
-paths_bottomleft_upperRIght.i: paths_bottomleft_upperRIght.c.i
+flipWords.i: flipWords.c.i
 
-.PHONY : paths_bottomleft_upperRIght.i
+.PHONY : flipWords.i
 
 # target to preprocess a source file
-paths_bottomleft_upperRIght.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/paths_bottomleft_upperRIght.c.i
-.PHONY : paths_bottomleft_upperRIght.c.i
+flipWords.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/flipWords.c.i
+.PHONY : flipWords.c.i
 
-paths_bottomleft_upperRIght.s: paths_bottomleft_upperRIght.c.s
+flipWords.s: flipWords.c.s
 
-.PHONY : paths_bottomleft_upperRIght.s
+.PHONY : flipWords.s
 
 # target to generate assembly for a file
-paths_bottomleft_upperRIght.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/paths_bottomleft_upperRIght.c.s
-.PHONY : paths_bottomleft_upperRIght.c.s
+flipWords.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/flipWords.c.s
+.PHONY : flipWords.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled1"
-	@echo "... paths_bottomleft_upperRIght.o"
-	@echo "... paths_bottomleft_upperRIght.i"
-	@echo "... paths_bottomleft_upperRIght.s"
+	@echo "... flipWords.o"
+	@echo "... flipWords.i"
+	@echo "... flipWords.s"
 .PHONY : help
 
 
